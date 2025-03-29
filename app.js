@@ -15,7 +15,6 @@ document.addEventListener("keypress", function(){
         levelUp();
     }
 });
-
 function gameFlash(btn){
     btn.classList.add("flash");
     setTimeout(function(){
@@ -28,9 +27,6 @@ function UserFlash(btn){
         btn.classList.remove("userflash");
     },300)
 }
-
-
-
 function levelUp(){
     userSeq = [];
     level++;
@@ -45,7 +41,6 @@ function levelUp(){
     console.log(gameSeq);
     gameFlash(randBtn); 
 }
-
 function drpshdw(btn){
     // let btn = this;
     btn.classList.add("drop_shadow"); 
@@ -53,7 +48,6 @@ function drpshdw(btn){
         btn.classList.remove("drop_shadow");
     },150)  
 }
-
 function checkAns(idx){
     if (userSeq[idx] === gameSeq[idx]) {
         if (userSeq.length ==  gameSeq.length) {
@@ -68,9 +62,6 @@ function checkAns(idx){
         reset();
     }
 }
-
-
-
 function btnPress() {
     let btn = this;
     UserFlash(btn);
@@ -82,7 +73,6 @@ function btnPress() {
     checkAns(userSeq.length-1);
     // console.log(this);
 }
-
 let allBtns = document.querySelectorAll(".btn");
 for (btn of allBtns){
     btn.addEventListener("click", btnPress);
