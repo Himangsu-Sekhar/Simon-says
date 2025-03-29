@@ -1,3 +1,3 @@
 # NEW PROJECT 
 
-This project was created from local system.
+    The game requires players to carefully observe a sequence of blinking buttons and replicate the exact pattern by pressing the corresponding buttons in the same order. Success depends on accuracy and memory, as any incorrect input may result in a failed attempt. The challenge intensifies as the sequences become longer and more complex, testing the player's focus and reaction time.
